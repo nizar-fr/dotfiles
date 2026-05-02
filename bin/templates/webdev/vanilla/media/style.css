@@ -1,0 +1,35 @@
+.video-container {
+  position: relative;
+  width: 600px;
+  margin: 20px 0;
+}
+video {
+  width: 100%;
+  background: #000;
+}
+.controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  background: #333;
+  color: white;
+}
+#visualizer {
+  display: block;
+  margin-top: 20px;
+  background: #111;
+}
+#camera-feed, #snapshot {
+  display: block;
+  margin: 10px 0;
+  border: 2px solid #6200ee;
+  max-width: 100%;
+}
+button {
+  padding: 8px 16px;
+  background: #6200ee;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

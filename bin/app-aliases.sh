@@ -1,0 +1,5 @@
+alias gba="/media/nizar/HD/Entertainment/Game/mGBA-0.10.3-appimage-x64.appimage && exit"
+alias lmms="/media/nizar/HD/Assets/Tools/Music/lmms-1.2.2-linux-x86_64.AppImage && exit"
+alias snes="/media/nizar/HD/Entertainment/Game/NES/Snes9x-1.62.3-x86_64.AppImage && exit"
+alias cursor="/media/nizar/HD/Assets/Tools/Programming/cursor-0.32.2x86_64.AppImage && exit"
+alias torrent="/media/nizar/HD/Assets/Tools/qbittorrent-4.6.3_lt20_x86_64.AppImage && exit"

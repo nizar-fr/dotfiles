@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="contactForm">
+            <h2>Contact Us</h2>
+            <label class="label" for="name">Name:</label>
+            <input class="input" type="text" id="name" name="name" required>
+            
+            <label class="label" for="email">Email:</label>
+            <input class="input" type="email" id="email" name="email" required>
+            
+            <label class="label" for="message">Message:</label>
+            <textarea class="input message" id="message" name="message" required></textarea>
+            
+            <button class="submit-button" type="submit">Submit</button>
+        </form>
+        <p id="responseMessage"></p>
+    </div>
+    
+    <script src="src/script.js"></script>
+</body>
+</html>
+

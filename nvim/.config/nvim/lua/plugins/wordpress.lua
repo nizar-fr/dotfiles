@@ -1,0 +1,3 @@
+return {
+  "bitpoke/wordpress.nvim",
+}

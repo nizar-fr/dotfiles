@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form {
+  min-width: 300px;
+  max-width: 400px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  .label {
+    margin-bottom: 0.5rem;
+  }
+  .input {
+    margin-bottom: 1rem;
+    padding: 6px;
+  }
+  .message{
+    min-height: 100px;
+  }
+  .submit-button {
+    padding: 10px 0px;
+    font-weight: 700;
+  }
+}

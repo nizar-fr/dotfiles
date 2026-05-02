@@ -1,0 +1,12 @@
+--2024-09-14 06:44:48--  http://archive.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5.3_amd64.deb
+Resolving archive.ubuntu.com (archive.ubuntu.com)... 2620:2d:4002:1::101, 2620:2d:4002:1::103, 2620:2d:4000:1::102, ...
+Connecting to archive.ubuntu.com (archive.ubuntu.com)|2620:2d:4002:1::101|:80... failed: Connection timed out.
+Connecting to archive.ubuntu.com (archive.ubuntu.com)|2620:2d:4002:1::103|:80... failed: Connection timed out.
+Connecting to archive.ubuntu.com (archive.ubuntu.com)|2620:2d:4000:1::102|:80... failed: Connection timed out.
+Connecting to archive.ubuntu.com (archive.ubuntu.com)|2620:2d:4000:1::103|:80... failed: Network is unreachable.
+Connecting to archive.ubuntu.com (archive.ubuntu.com)|2620:2d:4000:1::101|:80... failed: Network is unreachable.
+Connecting to archive.ubuntu.com (archive.ubuntu.com)|2620:2d:4002:1::102|:80... failed: Network is unreachable.
+Connecting to archive.ubuntu.com (archive.ubuntu.com)|185.125.190.82|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2024-09-14 06:51:22 ERROR 404: Not Found.
+

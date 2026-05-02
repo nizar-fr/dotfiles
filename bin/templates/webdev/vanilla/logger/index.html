@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser JS Logger</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="logger-container">
+    <h1>Browser Console++</h1>
+    
+    <div class="controls">
+      <button id="clear-logs">Clear</button>
+      <input type="text" id="log-filter" placeholder="Filter logs...">
+      <label>
+        <input type="checkbox" id="persist-logs"> Persist on refresh
+      </label>
+    </div>
+    
+    <div class="log-levels">
+      <button data-level="all" class="active">All</button>
+      <button data-level="log">Log</button>
+      <button data-level="info">Info</button>
+      <button data-level="warn">Warn</button>
+      <button data-level="error">Error</button>
+    </div>
+    
+    <div id="log-output"></div>
+  </div>
+  
+  <!-- Demo buttons - Remove in production -->
+  <div class="demo-buttons">
+    <button id="demo-log">Test Log</button>
+    <button id="demo-error">Test Error</button>
+  </div>
+  
+  <script src="src/script.js"></script>
+</body>
+</html>

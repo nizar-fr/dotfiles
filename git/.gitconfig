@@ -1,0 +1,24 @@
+[user]
+	name = Nizarudin
+	email = nizarudin.fr@gmail.com
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[http]
+	version = HTTP/1.1
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[alias]
+	gl = config --global -l
+[init]
+	defaultBranch = main
+[safe]
+	directory = *
+[core]
+	editor = nvim

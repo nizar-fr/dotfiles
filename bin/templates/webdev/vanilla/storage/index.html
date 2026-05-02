@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storage Experiments</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Client-Side Storage</h1>
+    
+    <div class="tabs">
+      <button class="tab active" data-tab="local">localStorage</button>
+      <button class="tab" data-tab="session">sessionStorage</button>
+      <button class="tab" data-tab="indexed">IndexedDB</button>
+    </div>
+
+    <!-- localStorage Tab -->
+    <div id="local" class="tab-content active">
+      <input type="text" id="local-key" placeholder="Key">
+      <input type="text" id="local-value" placeholder="Value">
+      <button id="local-save">Save</button>
+      <button id="local-read">Read</button>
+      <button id="local-clear">Clear</button>
+      <div id="local-output" class="output"></div>
+    </div>
+
+    <!-- sessionStorage Tab -->
+    <div id="session" class="tab-content">
+      <!-- Same structure as localStorage -->
+    </div>
+
+    <!-- IndexedDB Tab -->
+    <div id="indexed" class="tab-content">
+      <input type="text" id="item-name" placeholder="Item name">
+      <input type="number" id="item-qty" placeholder="Quantity">
+      <button id="indexed-add">Add Item</button>
+      <button id="indexed-get">Get All</button>
+      <div id="indexed-output" class="output"></div>
+    </div>
+  </div>
+  <script src="src/script.js"></script>
+</body>
+</html>

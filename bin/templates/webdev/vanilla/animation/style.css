@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+button {
+  background: #6200ee;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: #ff5722;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+/* CSS Animations */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.css-animation-target.pulse {
+  animation: pulse 0.5s ease infinite;
+}
+
+.css-animation-target.spin {
+  animation: spin 1s linear infinite;
+}

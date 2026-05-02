@@ -1,0 +1,68 @@
+import = [
+    "~/.config/alacritty/themes/themes/ayu_dark.toml"
+]
+
+[selection]
+save_to_clipboard= true
+
+[window]
+startup_mode = "Fullscreen"
+padding = { x = 0, y = 0}
+decorations = "Full" 
+opacity = 1
+blur = true 
+
+[font]
+# Jetbrains Mono
+## Standard
+# size = 10.2
+
+## 1024x768
+# size = 9.37
+
+## 1920x1080
+size = 13
+offset.y = 1
+offset.x = -1
+normal = { family = "Jetbrains Mono NF" , style="Medium"}
+italic = {style="Oblique"}
+
+## Large
+# size = 12.5
+# offset.y = 2
+# offset.x = -1
+# normal = { family = "Jetbrains Mono" , style="Semibold"}
+# italic = {style="Oblique"}
+
+#Victor Mono
+# size = 11.5
+# offset.y = 2
+# offset.x = 0
+# normal = { family = "Victor Mono" , style="Bold"}
+# italic = {style="Oblique"}
+## Large
+# size = 14.8
+# offset.y = 4
+# offset.x = 0
+# normal = { family = "Victor Mono" , style="Bold"}
+# italic = {style="Oblique"}
+
+# Ubuntu Mono
+# size = 11.7
+# offset.y = 4
+# offset.x = -1
+# normal = { family = "Ubuntu Mono" , style="Semibold"}
+# italic = {style="Oblique"}
+
+[colors.primary]
+# background = "#090C11"
+
+[bell]
+animation = "EaseOut"
+duration = 1
+
+# [keyboard]
+# bindings = [
+# # { key = "C", mods = "Control", action = "Copy" },
+# # { key = "K", mods = "Control", chars = "\u0003"}
+# ]
