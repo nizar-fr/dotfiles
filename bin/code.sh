@@ -48,7 +48,7 @@ for code_key code_val in ${(@kv)code_directory}; do
     key_command="${code_key}${lang_key}"
     directory="${HDCODE}/${code_val}/${lang_val}"
     if [ ! -d "$directory" ]; then
-      mkdir $directory
+      mkdir -p $directory
     fi
     eval "${key_command}() {
       cd '${directory}' || return

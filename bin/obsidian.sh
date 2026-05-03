@@ -8,7 +8,7 @@ pubobd(){
 HD_PATH=$HDWN
 
 # export NOTEDIR="/media/nizar/HD/Knowledge/computer_science/"
-export NOTEDIR="$HD_PATH/note/"
+export NOTEDIR=~/notes/
 TODODIR="$HD_PATH/personal/todo/"
 DAILYDIR="$HD_PATH/personal/daily/"
 TOLEARNDIR="$HD_PATH/personal/research/tolearn/"

@@ -1,66 +1,3 @@
-# echo " TODO"
-# echo " ------"
-# echo " Tech Blog - Svelte, Astro"
-# echo " Codem - Rust, SQLx, Git2"
-# echo " Elegrant - Wordpress"
-# echo " The Wire API"
-# echo ""
-
-echo ""
-echo " TODO"
-echo -e "\033[31m"  # red
-echo -e " Codem"
-echo -e " - Finish 31 October"
-echo -e "\033[0m"   # red end
-echo -e "\033[33m" # yellow
-echo -e " November"
-echo -e " - Finish Tech Blog. Be confident with typescript and frontend ecosystems"
-echo -e " - Elegrant"
-echo -e " - Finish preparing Portfolio for Upwork and other freelance platforms"
-echo -e "\033[0m"  # yellow end
-echo -e "\033[32m" # green
-echo -e " If no job, continue with :"
-echo -e " - The Wire API"
-echo -e " - Nextstore"
-echo -e " - Gruu"
-echo -e " MDN"
-echo -e "\033[0m" # green end
-echo ""
-
-# # Convert markdown above into echo like at the top
-# echo "Learning Path"
-# echo " Top Priority"
-# echo " ------------"
-# echo " HTML, CSS, Javascript"
-# echo " Git"
-# echo " SQL"
-# echo " OOP - Design Patterns - System Design"
-# echo " Operating System (Linux)"
-# echo " Laravel, NestJS, C#."
-# echo " AI Prompting and stuff."
-# echo ""
-# echo " Medium Priority"
-# echo " ---------------"
-# echo " IT Business"
-# echo " Network Programming with Rust."
-# echo " Cyber Security."
-# echo " Documentation."
-# echo " Design"
-# echo ""
-# echo " Low Priority"
-# echo " ------------"
-# echo " Math Descrete"
-# echo " Computer specs."
-# echo " OpenCV"
-# echo " Mobile"
-# echo ""
-# echo " Non IT"
-# echo " ------"
-# echo " Siapin CV."
-# echo " Take Law DEGREE"
-# echo " IELTS"
-# echo ""
-
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -126,7 +63,6 @@ export PATH="$PATH:/home/nizar/.dotnet/tools"
 . "$HOME/.cargo/env"
 source /home/nizar/alacritty/extra/completions/alacritty.bash
 source ~/.bash_completion/alacritty
-source "/home/nizar/.sdkman/bin/sdkman-init.sh"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
 
@@ -180,30 +116,15 @@ export HOMECFG="/home/nizar/.config/"
 export HDEX="/media/nizar/HD/"
 export HDD="/home/nizar/temp_hd/"
 export HDWN="/media/nizar/1E064EC0064E9923/Users/Nizar/temp_hd/"
-export HDUSED="$HDWN"
+export HDUSED=~
 export HDCODE="$HDUSED/_code"
 
-# # Source all .bash.d files
-# export BASHD=~/.bash.d
-# # bash_filenames=($(ls $BASHD -p | grep -v /))
-# #
-# # for bashfile in ${bash_filenames}; do
-# #     source $BASHD/$bashfile
-# # done
-# bash_filenames=($(ls $BASHD -p | grep -v /))
-#
-# for bashfile in ${bash_filenames}; do
-#     source $BASHD/$bashfile
-# done
 
 export CUSTOMBIN=~/dotfiles/bin
-loadcustombin(){
-  local custom_bin_files=($(ls $CUSTOMBIN -p | grep -v /))
-  for bin_file in ${custom_bin_files}; do
-    source $CUSTOMBIN/$bin_file
-  done
-}
-loadcustombin
+local custom_bin_files=($(ls $CUSTOMBIN -p | grep -v /))
+for bin_file in ${custom_bin_files}; do
+  source $CUSTOMBIN/$bin_file
+done
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
